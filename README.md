@@ -1,6 +1,23 @@
 Example Voting App
 =========
 
+![working-example](working_example.png)
+
+```
+sudo docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
+55d11ed2968f        worker-app          "java -jar target/wo…"   23 minutes ago      Up 23 minutes                                stoic_pare
+aef1c360e74b        postgres:9.4        "docker-entrypoint.s…"   27 minutes ago      Up 27 minutes       5432/tcp                 db
+fdb9880e845b        voting-app          "gunicorn app:app -b…"   34 minutes ago      Up 34 minutes       0.0.0.0:5000->8080/tcp   hardcore_faraday
+872ccd18a890        redis               "docker-entrypoint.s…"   55 minutes ago      Up 55 minutes       6379/tcp                 redis
+
+```
+
+
+
+
+
+
 Getting started
 ---------------
 
